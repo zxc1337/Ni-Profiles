@@ -30,7 +30,7 @@ local items = {
 	{ type = "entry", text = "Healthstone", tooltip = "Use Warlock Healthstone (if you have) when player HP < %", enabled = true, value = 35, key = "healthstoneuse" },
 	{ type = "entry", text = "Heal Potion", tooltip = "Use Heal Potions (if you have) when player HP < %", enabled = true, value = 30, key = "healpotionuse" },
 	{ type = "separator" },
-	{ type = "title", text = "|cffEE4000Rotation Settings"" },
+	{ type = "title", text = "|cffEE4000Rotation Settings" },
 	{ type = "separator" },
 	{ type = "entry", text = "Blood Boil", tooltip = "Use spell when you have > 2 enemies instead of using Heart Strike", enabled = false, key = "boil" },	
 	{ type = "separator" },
@@ -343,7 +343,6 @@ local abilities = {
 		if ni.vars.combat.aoe
 		 and ni.spell.isinstant(deathanddecay) 
 		 and ni.spell.cd(deathanddecay) == 0 then
-		 then
 			ni.spell.castatqueue(deathanddecay, "target")
 			return true
 		end
